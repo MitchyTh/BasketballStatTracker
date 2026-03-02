@@ -17,16 +17,6 @@ This project implements a complete backend system for basketball player statisti
 
 ---
 
-## Repo Contents
-backend/
-├─ scripts/
-│ ├─ load_data.py # Python scripts to load raw CSV data into the database
-│ └─ dbexport.psql # Exported PostgreSQL database
-├─ requirements.txt # Python dependencies
-└─ README.md # This README
-
----
-
 ## Database Structure
 A representation of the database tables:
 players
@@ -57,7 +47,6 @@ This schema ensures each player’s stats are linked to the correct player, allo
    - PostgreSQL
 
 2. **Create database and user**
-```bash
 createuser okcapplicant --createdb
 createdb okc
 
@@ -76,12 +65,3 @@ psql -U okcapplicant okc
 SELECT * FROM players LIMIT 5;
 SELECT * FROM stats LIMIT 5;
 
----
-
-##Portfolio Highlights
-
-- Fully implemented backend for a basketball player stats project
-- Scripts handle repeatable and clean data imports
--Calculates player summary statistics and ranks
--Designed to feed a frontend API or dashboard
--Demonstrates Python scripting, PostgreSQL, and backend engineering skills
