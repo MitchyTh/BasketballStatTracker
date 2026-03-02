@@ -1,4 +1,4 @@
-# OKC Player Stats Backend
+# Basketball Player Stats Backend
 
 Backend scripts to load basketball player statistics into a PostgreSQL database, calculate player summaries, and rank player stats.
 
