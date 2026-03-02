@@ -17,29 +17,6 @@ This project implements a complete backend system for basketball player statisti
 
 ---
 
-## Database Structure
-A representation of the database tables:
-players
-├─ player_id (PK)
-├─ name
-├─ team
-└─ position
-
-stats
-├─ stat_id (PK)
-├─ player_id (FK → players.player_id)
-├─ game_id
-├─ halfcourt_action
-├─ shots
-├─ passes
-└─ turnovers
-
-> `PK` = Primary Key, `FK` = Foreign Key
-
-This schema ensures each player’s stats are linked to the correct player, allowing for aggregation into summaries and rankings.
-
----
-
 ## Setup Instructions
 
 1. **Install prerequisites**
